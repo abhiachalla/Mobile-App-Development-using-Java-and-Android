@@ -14,8 +14,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button button = (Button) findViewById(R.id.button_send);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Do something in response to button click
+                sendMessage();
+            }
+        });
 
+    }
+    public void sendMessage() {
+        Context context = getApplicationContext();
+        CharSequence text = "Abhi Achalla achalla.a@northeastern.edu!";
+        int duration = Toast.LENGTH_SHORT;
 
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
 
