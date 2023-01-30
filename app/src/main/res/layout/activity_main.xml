@@ -24,12 +24,14 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="300dp"/>
 
-    <TextView
+
+    <Button
+        android:id="@+id/button_clicky"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thank you!"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="500dp"
-        android:textSize="25dp"/>
+        android:onClick="sendMessage"
+        android:text="@string/clicky_clicky"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="400dp"/>
 
 </RelativeLayout>

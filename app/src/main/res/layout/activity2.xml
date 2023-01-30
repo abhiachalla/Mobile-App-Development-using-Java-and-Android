@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activity2">
+
+<Button
+    android:id="@+id/button_A"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="A"
+    android:onClick="clickyButton"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/button_B"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/button_D" />
+
+<Button
+    android:id="@+id/button_B"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="B"
+    android:onClick="clickyButton"
+    app:layout_constraintStart_toEndOf="@+id/button_A"
+    app:layout_constraintEnd_toStartOf="@id/button_C"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/button_E" />
+
+<Button
+    android:id="@+id/button_C"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="C"
+    android:onClick="clickyButton"
+    app:layout_constraintStart_toEndOf="@+id/button_B"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/button_F" />
+
+<Button
+    android:id="@+id/button_D"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="D"
+    android:onClick="clickyButton"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/button_E"
+    app:layout_constraintTop_toBottomOf="@id/button_A"
+    app:layout_constraintBottom_toTopOf="@+id/textView" />
+
+<Button
+    android:id="@+id/button_E"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="E"
+    android:onClick="clickyButton"
+    app:layout_constraintStart_toEndOf="@id/button_D"
+    app:layout_constraintEnd_toEndOf="@id/button_F"
+    app:layout_constraintTop_toBottomOf="@id/button_B"
+    app:layout_constraintBottom_toTopOf="@+id/textView" />
+
+<Button
+    android:id="@+id/button_F"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="F"
+    android:onClick="clickyButton"
+    app:layout_constraintStart_toEndOf="@id/button_E"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/button_C"
+    app:layout_constraintBottom_toTopOf="@+id/textView" />
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pressed: "
+    android:textColor="@color/black"
+    android:textSize="30dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/button_E" />
+</androidx.constraintlayout.widget.ConstraintLayout>

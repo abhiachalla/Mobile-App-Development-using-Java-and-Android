@@ -3,6 +3,7 @@ package com.example.numad23sp_abhiachalla;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonOne = findViewById(R.id.button_clicky);
+        buttonOne.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent activity2Intent = new Intent(getApplicationContext(), Activity2.class);
+                startActivity(activity2Intent);
+            }
+        });
     }
     public void sendMessage() {
         Context context = getApplicationContext();
