@@ -57,7 +57,15 @@ public class LinkCollector extends AppCompatActivity {
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
-
+                View parentLayout = findViewById(android.R.id.content);
+                Snackbar snack = Snackbar.make(parentLayout, "Deleted the link you swiped!", Snackbar.LENGTH_LONG).setAction("Action", null);
+                View snackView = snack.getView();
+                TextView mTextView = snackView.findViewById(com.google.android.material.R.id.snackbar_text);
+                mTextView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                snack.show();
+                int position = viewHolder.getLayoutPosition();
+                linkList.remove(position);
+                adapterRecyclerView.notifyItemRemoved(position);
             }
         });
         itemTouchHelper.attachToRecyclerView(recyclerView);
