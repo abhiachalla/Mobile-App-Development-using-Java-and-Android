@@ -19,7 +19,12 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
-                sendMessage();
+                Intent aboutMeIntent = new Intent(getApplicationContext(), AboutMeActivity.class);
+                startActivity(aboutMeIntent);
+
+                //sendMessage();
+
+
             }
         });
 
@@ -30,14 +35,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(activity2Intent);
             }
         });
+
+
+        Button linkCollector = findViewById(R.id.link_collector);
+        linkCollector.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent linkCollectorIntent = new Intent(getApplicationContext(), LinkCollector.class);
+                startActivity(linkCollectorIntent);
+            }
+        });
     }
     public void sendMessage() {
-        Context context = getApplicationContext();
-        CharSequence text = "Abhi Achalla achalla.a@northeastern.edu!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+//        Context context = getApplicationContext();
+//        CharSequence text = "Abhi Achalla achalla.a@northeastern.edu!";
+//        int duration = Toast.LENGTH_SHORT;
+//
+//        Toast toast = Toast.makeText(context, text, duration);
+//        toast.show();
     }
 
 
