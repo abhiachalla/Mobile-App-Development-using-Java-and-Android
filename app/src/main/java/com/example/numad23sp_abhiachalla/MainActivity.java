@@ -44,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(linkCollectorIntent);
             }
         });
+
+        Button primeFinder = findViewById(R.id.prime_finder);
+        primeFinder.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent primeFinderIntent = new Intent(getApplicationContext(), PrimeActivity.class);
+                startActivity(primeFinderIntent);
+            }
+        });
     }
     public void sendMessage() {
 //        Context context = getApplicationContext();

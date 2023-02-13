@@ -43,4 +43,13 @@
         android:layout_marginLeft="130dp"
         android:layout_marginTop="500dp"/>
 
+    <Button
+        android:id="@+id/prime_finder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="@string/prime_finder"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="600dp"/>
+
 </RelativeLayout>

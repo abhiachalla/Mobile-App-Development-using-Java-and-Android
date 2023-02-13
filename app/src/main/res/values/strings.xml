@@ -3,4 +3,10 @@
     <string name="about_me">About Me</string>
     <string name="clicky_clicky">Clicky Clicky</string>
     <string name="link_collector">Link Collector</string>
+    <string name="prime_finder">Prime Activity</string>
+    <string name="find_primes">Find Primes</string>
+    <string name="terminate_search">Terminate Search</string>
+    <string name="pacify_search">Pacify Search</string>
+    <string name="display_current">Display Current</string>
+    <string name="display_latest">Display Latest</string>
 </resources>
