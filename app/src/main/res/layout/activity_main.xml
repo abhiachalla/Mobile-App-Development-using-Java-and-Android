@@ -10,9 +10,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Hello World2.0!"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="50dp"
         android:textSize="25dp"/>
 
     <Button
@@ -22,7 +22,7 @@
         android:onClick="sendMessage"
         android:text="@string/about_me"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="300dp"/>
+        android:layout_marginTop="100dp"/>
 
 
     <Button
@@ -32,7 +32,7 @@
         android:onClick="sendMessage"
         android:text="@string/clicky_clicky"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="400dp"/>
+        android:layout_marginTop="200dp"/>
 
     <Button
         android:id="@+id/link_collector"
@@ -41,7 +41,15 @@
         android:onClick="sendMessage"
         android:text="@string/link_collector"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="500dp"/>
+        android:layout_marginTop="300dp"/>
+    <Button
+        android:id="@+id/locatorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="Location finder"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="400dp"/>
 
     <Button
         android:id="@+id/prime_finder"
@@ -50,6 +58,8 @@
         android:onClick="sendMessage"
         android:text="@string/prime_finder"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="600dp"/>
+        android:layout_marginTop="500dp"/>
+
+
 
 </RelativeLayout>
